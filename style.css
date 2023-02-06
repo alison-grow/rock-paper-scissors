@@ -1,0 +1,46 @@
+body {
+    background-color: #141629;
+    margin: 0;
+}
+
+.header {
+    color: #F37BB5;
+    text-align: center;
+    font-size: 80px;
+}
+
+.rules {
+    text-align: center;
+    color: #B38ED5;
+}
+
+.btns {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.butn {
+    border: none;
+    background-color: #5E69BD;
+    color: #D3BDE9;
+    height: 30px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.score {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.message {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 25px;
+}
