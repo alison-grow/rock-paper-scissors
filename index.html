@@ -12,19 +12,20 @@
     
     <!-- HEADER -->
 
-    <h1 class="header">rock paper scissors &hearts;</h1>
+    <h1 class="header">rock paper scissors</h1>
 
     <!-- BODY -->
 
     <h2 class="rules">directions: choose rock, paper, or scissors and see if you win :)<br>rules: rock beats scissors, scissors beats paper, and paper beats rock :)</h2>
+    <div class="result">
+        <div class='message'>&nbsp;</div>
+        <div class='score'>click a button below :)</div>
+    </div>
     <div class="btns">
         <button type='button' class="butn">rock</button>
         <button type='button' class="butn">paper</button>
         <button type='button' class="butn">scissors</button>
     </div>
-
-    <div class='score'></div>
-    <div class='message'></div>
 
     <script>
         const message = document.querySelector('.message');
@@ -46,8 +47,8 @@
                 computerSelection = 'scissors';
             }
             let result = checkWinner(playerSelection, computerSelection);
-            if (result === 'player'){
-                result += ' wins!';
+            if (result === 'you'){
+                result += ' win!';
                 winnerScores[0]++;
             }
             if (result === 'computer'){
@@ -57,8 +58,8 @@
             if (result === 'draw'){
                 result += '. it\'s a tie!'
             }
-            score.innerHTML = 'player: [ ' + winnerScores[0]+ ' ] computer: [ ' + winnerScores[1] + ' ]';
-            messenger('player: <strong>' + playerSelection + '</strong> computer: <strong>' + computerSelection + '</strong><br>' + result);
+            score.innerHTML = 'you: ' + winnerScores[0]+ ' computer: ' + winnerScores[1] + ' ';
+            messenger('you chose <strong>' + playerSelection + '...</strong> computer chose <strong>' + computerSelection + '</strong><br>' + result);
         }
 
         function messenger(selectionMessage){
@@ -74,21 +75,21 @@
                 if(computer === 'paper'){
                     return 'computer';
                 } else {
-                    return 'player';
+                    return 'you';
                 }
             }
             if (player === 'paper'){
                 if (computer === 'scissors'){
                     return 'computer';
                 } else {
-                    return 'player';
+                    return 'you';
                 }
             }
             if (player === 'scissors'){
                 if (computer === 'rock'){
                     return 'computer';
                 } else {
-                    return 'player';
+                    return 'you';
                 }
             }
         }

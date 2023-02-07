@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'font';
+    src: url('/font/kindergarten.ttf');
+}
+
 body {
     background-color: #141629;
     margin: 0;
@@ -6,41 +11,64 @@ body {
 .header {
     color: #F37BB5;
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
+    font-family: 'font', cursive;
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 .rules {
     text-align: center;
     color: #B38ED5;
+    font-family: 'font', cursive;
+    font-size: 30px;
+    font-weight: 200;
 }
 
 .btns {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
+    font-weight: 200;
 }
 
 .butn {
     border: none;
     background-color: #5E69BD;
-    color: #D3BDE9;
-    height: 30px;
-    width: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
+    color: white;
+    height: 70px;
+    width: 160px;
+    margin: auto 10px auto 10px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 40px;
+    font-family: 'font', cursive;
+    font-weight: 200;
+}
+
+.result {
+    width: 60%;
+    min-height: 180px;
+    border: 5px solid white;
+    background: none;
+    margin: 30px auto 10px auto;
+    border-radius: 15px;
 }
 
 .score {
     text-align: center;
-    color: white;
-    margin-top: 50px;
-    font-size: 25px;
+    color: #DD96B9;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: 'font', cursive;
+    font-weight: 200;
+    margin-bottom: 10px;
 }
 
 .message {
     text-align: center;
-    color: white;
-    margin-top: 10px;
-    font-size: 25px;
+    color: #DD96B9;
+    font-size: 40px;
+    margin-top: 15px;
+    font-family: 'font', cursive;
+    font-weight: 200;
 }
