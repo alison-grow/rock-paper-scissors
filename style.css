@@ -45,6 +45,16 @@ body {
     font-weight: 200;
 }
 
+.butn:hover {
+    background-color: white;
+    color: #5E69BD;
+}
+
+.butn:active {
+    background-color: #F37BB5;
+    color: white;
+}
+
 .result {
     width: 60%;
     min-height: 180px;
